@@ -3,17 +3,15 @@ const cors = require('cors')
 
 const app = express()
 
-// Config JSON reponse
+// CORS
 app.use(express.json())
-
-// Solve Cors
 app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
 
-// Public Folder for images
+// IMAGENS
 app.use(express.static('public'))
 
-// Routes
-const UserRoutes = require('./ROUTES/UserRoutes')
+// ROTAS
+const UserRoutes = require('./ROUTES/UserRoutes');
 
 app.use('/users', UserRoutes)
 
