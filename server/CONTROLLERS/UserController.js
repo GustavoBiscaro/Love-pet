@@ -9,9 +9,6 @@ const getToken = require('../HELPERS/get-token')
 const getUserByToken = require('../HELPERS/get-user-by-token')
 
 module.exports = class UserController {
-
-
-
     static async register(req, res) {
 
         const { name, email, phone, password, confirmpassword } = req.body
@@ -30,11 +27,11 @@ module.exports = class UserController {
             return
         }
         if (!password) {
-            res.status(422).json({ message: 'A senha é obrigatório' })
+            res.status(422).json({ message: 'A senha é obrigatória' })
             return
         }
         if (!confirmpassword) {
-            res.status(422).json({ message: 'A confirmação de senha é obrigatório' })
+            res.status(422).json({ message: 'A confirmação de senha é obrigatória' })
             return
         }
 
@@ -96,7 +93,6 @@ module.exports = class UserController {
         }
 
         // checar se as senhas correspondem
-
         const checkPassword = await bcrypt.compare(password, user.password)
 
         if (!checkPassword) {
@@ -166,24 +162,20 @@ module.exports = class UserController {
     }
 
     static async editUser(req, res) {
+        const id = req.params.id;
 
-        const id = req.params.id
-
-        //check if user exists
         const token = getToken(req)
-        const user = await getUserByToken(token)
+        const user = await getUserByToken(token);
 
         const { name, email, phone, password, confirmpassword } = req.body
 
         let image = ''
 
-
-        // validações
+        // validando
         if (!name) {
             res.status(422).json({ message: 'O nome é obrigatório' })
             return
         }
-
         user.name = name
 
         if (!email) {
@@ -191,54 +183,29 @@ module.exports = class UserController {
             return
         }
 
-        // check if email has already taken
-        const userExists = await User.findOne({ email: email })
+        // CHECAGEM DE EMAIL SE JÁ EXISTIR
+        const userExists = await User.findOne({ email: email });
 
-        if (!user.email !== email && userExists) {
+        if (user.email !== email && userExists) {
             res.status(422).json({
-                message: 'Por favor, utilize outro e-mail!!',
+                message: 'Por favor, utilize outro e-mail!',
             })
             return
         }
-
         user.email = email
-
 
         if (!phone) {
             res.status(422).json({ message: 'O telefone é obrigatório' })
             return
         }
-        user.phone = phone
-
-        if (password != confirmpassword) {
-            res.status(422).json({ message: 'As senhas não conferem' })
-            return
-        } else if (password == confirmpassword && password != null) {
-
-            // creating password
-            const salt = await bcrypt.genSalt(12)
-            const passwordHash = await bcrypt.hash(password, salt)
-
-            user.password = passwordHash
-        }
-
-        try {
-
-            // returns user updated data
-            await User.findOneAndUpdate(
-                { _id: user._id },
-                { $set: user },
-                { new: true },
-            )
-
-            res.status(200).json({
-                user: "Usuário atualizado com sucesso!",
-            })
-        } catch (e) {
-            res.status(500).json({ message: e })
+        if (!password) {
+            res.status(422).json({ message: 'A senha é obrigatória' })
             return
         }
-
+        if (!confirmpassword) {
+            res.status(422).json({ message: 'A confirmação de senha é obrigatória' })
+            return
+        }
 
     }
 }
