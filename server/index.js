@@ -12,7 +12,9 @@ app.use(express.static('public'))
 
 // ROTAS
 const UserRoutes = require('./ROUTES/UserRoutes');
+const PetRoutes = require('./ROUTES/PetRoutes');
 
 app.use('/users', UserRoutes)
+app.use('/pets', PetRoutes)
 
 app.listen(5000)
