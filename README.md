@@ -55,16 +55,8 @@
 
 <div style="text-align: justify;">
 <p>Utilizamos o Postman para testar todas as rotas e funções do projeto via servidor, foi necessário para validar rotas de UPDATE, DELETE, GET, POST e CATCH do projeto de modo a garantir que não daria conflito para o início do Frontend.</p>
-
-As rotas foram organizadas em ordem de criação, conforme imagem a seguir.
-<div>
-<img width="150px" src="https://private-user-images.githubusercontent.com/57949820/419176599-d1b481f1-eeba-4093-8f09-9cf4e1a0b3af.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMjYxNjQsIm5iZiI6MTc0MTEyNTg2NCwicGF0aCI6Ii81Nzk0OTgyMC80MTkxNzY1OTktZDFiNDgxZjEtZWViYS00MDkzLThmMDktOWNmNGUxYTBiM2FmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzA0VDIyMDQyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThmODhlZDVlNThjOWIzZTBjNzE1MWUxYmZjYjM4YjFkNWNkNDgzMzY3YmMzNzFjNTMxMWNkZjgyMGRmZDhhMTYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.avqaCqfjuaD1VxRZTuMN03Ar5I6sJSh1PAc6V6g7RW8"/>
-</div>
 </div>
 
 # ESTRUTURA MVC
-### Todo projeto foi feito utilizando como inspiração, a estrutura MVC (Model-View-Controller) com o objetivo de facilitar a manutenção do código, conforme imagem a seguir.
-<div>
-<img width="150px" src="https://private-user-images.githubusercontent.com/57949820/419177432-819cbec1-f850-401b-a0d3-03774dfcf582.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDExMjYzMjAsIm5iZiI6MTc0MTEyNjAyMCwicGF0aCI6Ii81Nzk0OTgyMC80MTkxNzc0MzItODE5Y2JlYzEtZjg1MC00MDFiLWEwZDMtMDM3NzRkZmNmNTgyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzA0VDIyMDcwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg4MWExNjBhYzhhOGZjYjdiZDA1NWZkNzJlMTJhMTFmODFjZDNlNzIyMmYzZTViM2FiOTlmMDkwZjljMzQ0ODcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.t0j-2rwfUvSy5B77eetAQvHrMIEdBu0k435gFXtvXJI"/>
-</div>
+### Todo projeto foi feito utilizando como inspiração, a estrutura MVC (Model-View-Controller) com o objetivo de facilitar a manutenção do código.
 
