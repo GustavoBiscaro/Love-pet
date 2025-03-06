@@ -1,0 +1,22 @@
+:root {
+  --main-color: #6507cf;
+  --secundary-color: #b056d4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--main-color);
+  margin-bottom: 1em;
+  font-size: 2.1em;
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--main-color);
+}
