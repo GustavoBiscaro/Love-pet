@@ -4,6 +4,7 @@
   padding: 1em 1.5em;
   background-color: var(--secundary-color);
   color: var(--main-color);
+  border: 1px solid var(--main-color);
 }
 
 .navbar_logo {
@@ -31,6 +32,7 @@
   transition: .5s;
   padding: .5em .8em;
   border-radius: 5px;
+  margin-left: 10px;
 }
 
 .navbar li:hover {

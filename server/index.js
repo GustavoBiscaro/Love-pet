@@ -3,18 +3,25 @@ const cors = require('cors')
 
 const app = express()
 
-// CORS
+// Middleware
 app.use(express.json())
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
+app.use(cors({
+  credentials: true,
+  origin: ['http://localhost:3000', 'http://localhost:5173']
+}))
 
-// IMAGENS
+// Servir arquivos estáticos
 app.use(express.static('public'))
 
-// ROTAS
-const UserRoutes = require('./ROUTES/UserRoutes');
-const PetRoutes = require('./ROUTES/PetRoutes');
+// Rotas
+const UserRoutes = require('./ROUTES/UserRoutes')
+const PetRoutes = require('./ROUTES/PetRoutes')
 
 app.use('/users', UserRoutes)
 app.use('/pets', PetRoutes)
 
-app.listen(5000)
+// Iniciar servidor
+const PORT = 5000
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`)
+})

@@ -4,24 +4,35 @@ import './App.css'
 /*componentes */
 import Navbar from './COMPONENTS/layout/Navbar';
 import Footer from './COMPONENTS/layout/Footer';
+import Container from './COMPONENTS/layout/Container'
 
 /*Page */
 import Login from './COMPONENTS/pages/Auth/Login';
 import Register from './COMPONENTS/pages/Auth/Register';
-import Home from './COMPONENTS/pages/Auth/Home';
+import Home from './COMPONENTS/pages/Home';
+import Message from './COMPONENTS/layout/Message';
+
+/* Context */
+import { UserProvider } from './CONTEXT/UserContext';
 
 function App() {
 
 
   return (
+
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/' element={<Home />} />
-      </Routes>
-      <Footer />
+      <UserProvider>
+        <Navbar />
+        <Message />
+        <Container>
+          <Routes>
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </Container>
+        <Footer />
+      </UserProvider>
     </Router>
   )
 }

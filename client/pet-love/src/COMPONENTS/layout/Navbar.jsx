@@ -7,10 +7,10 @@ import Logo from '../../ASSETS/img/logo.png'
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbar_logo}>
+      <Link to="/" className={styles.navbar_logo}>
         <img src={Logo} alt="Love Pet" />
         <h2>Love Pet</h2>
-      </div>
+      </Link>
       <ul>
         <li>
           <Link to="/">Home</Link>
