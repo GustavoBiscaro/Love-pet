@@ -43,3 +43,7 @@
 .navbar li:hover>a {
   color: #fff;
 }
+
+p {
+  margin-left: 10px;
+}
