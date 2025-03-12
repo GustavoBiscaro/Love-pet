@@ -8,6 +8,7 @@ import api from '../../../UTILS/api'
 import Input from '../../form/Input'
 
 import useFlashMessage from '../../../HOOKS/useFlashMessage'
+import RoundedImage from '../../layout/RoundedImage'
 
 
 
@@ -68,7 +69,7 @@ const Profile = () => {
       <div className={styles.profile_header}>
         <h1>Perfil</h1>
         {(user.image || preview) && (
-          <img src={preview ? URL.createObjectURL(preview) : `${import.meta.env.VITE_API}images/users/${user.image}`} alt={user.name} />
+          <RoundedImage src={preview ? URL.createObjectURL(preview) : `${import.meta.env.VITE_API}images/users/${user.image}`} alt={user.name} />
         )}
       </div>
       <form onSubmit={handleSubmit} className={formStyles.form_container}>

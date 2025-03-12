@@ -3,6 +3,8 @@
   margin: 0 auto;
   background-color: #fff;
   border-radius: 15px;
+  margin-bottom: 30px;
+
 }
 
 .form_container input[type='submit'] {
@@ -36,4 +38,19 @@
   color: rgb(79, 52, 105);
   text-decoration: underline;
   font-weight: bold;
+}
+
+
+/*  Bichos */
+.preview_pet_images {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.preview_pet_images img {
+  width: 100px;
+  height: 100px;
+  margin-left: 1em;
+  border-radius: 100%;
 }

@@ -1,0 +1,95 @@
+.petList_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.petList_header h1 {
+  margin: 0;
+}
+
+.petList_header a {
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+  padding: .5em .8em;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+}
+
+.petList_header a:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.petList_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.petList_row {
+  border-bottom: 1px solid var(--main-color);
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.petList_row img {
+  margin-right: 1em;
+}
+
+.petList_row span {
+  min-width: 100px;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+.actions a,
+.actions button {
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--main-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  font-size: 12px;
+  margin-left: 1em;
+}
+
+.actions .delete_btn {
+  color: red;
+  border-color: red;
+
+}
+
+.actions .delete_btn:hover {
+  color: white;
+  background-color: red;
+}
+
+.actions a:hover,
+.actions button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.actions .conclude_btn {
+  color: var(--secundary-color);
+  border-color: var(--secundary-color);
+}
+
+.actions .conclude_btn:hover {
+  color: #fff;
+  border-color: var(--secundary-color);
+}

@@ -23,6 +23,9 @@ const Navbar = () => {
         {authenticated ? (
           <>
             <li>
+              <Link to="/pets/mypets">Meus bichos</Link>
+            </li>
+            <li>
               <Link to="/user/profile">Perfil</Link>
             </li>
             <li onClick={logout}>Sair</li></>) : (<><li>

@@ -58,7 +58,7 @@ module.exports = class PetController {
     })
 
     images.map((image) => {
-      pet.images.push(image.flename)
+      pet.images.push(image.filename)
     })
 
     try {
