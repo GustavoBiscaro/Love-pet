@@ -18,6 +18,8 @@ import { UserProvider } from './CONTEXT/UserContext';
 import MyPets from './COMPONENTS/pages/Pet/MyPets';
 import AddPet from './COMPONENTS/pages/Pet/AddPet';
 import EditPet from './COMPONENTS/pages/Pet/EditPet';
+import PetDetails from './COMPONENTS/pages/Pet/PetDetails';
+import MyAdoptions from './COMPONENTS/pages/Pet/MyAdoptions';
 
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
             <Route path='/pets/mypets' element={<MyPets />} />
             <Route path='/pets/add' element={<AddPet />} />
             <Route path='/pets/edit/:id' element={<EditPet />} />
+            <Route path='/pets/myadoptions' element={<MyAdoptions />} />
+            <Route path='/pets/:id' element={<PetDetails />} />
             <Route path='/' element={<Home />} />
           </Routes>
         </Container>

@@ -18,10 +18,13 @@ const Navbar = () => {
       </Link>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Visão Geral</Link>
         </li>
         {authenticated ? (
           <>
+            <li>
+              <Link to="/pets/myadoptions">Adoções</Link>
+            </li>
             <li>
               <Link to="/pets/mypets">Meus bichos</Link>
             </li>

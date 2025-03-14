@@ -33,7 +33,7 @@ const MyPets = () => {
         },
       })
       .then((response) => {
-        const updatedPets = pets.filter((pet) => pet._id != id)
+        const updatedPets = pets.filter((pet) => pet._id !== id)
         setPets(updatedPets)
         return response.data
       })
@@ -49,7 +49,7 @@ const MyPets = () => {
   return (
     <section>
       <div className={styles.petList_header}>
-        <h1>Love Pet</h1>
+        <h1>Meus Bichinhos</h1>
         <Link to="/pets/add">Cadastrar bicho</Link>
       </div>
       <div className={styles.petList_container}>

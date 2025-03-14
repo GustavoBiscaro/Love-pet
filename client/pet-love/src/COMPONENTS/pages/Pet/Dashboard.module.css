@@ -89,7 +89,16 @@
   border-color: var(--secundary-color);
 }
 
+.actions p {
+  color: red;
+  font-weight: bolder;
+}
+
 .actions .conclude_btn:hover {
   color: #fff;
   border-color: var(--secundary-color);
+}
+
+.contacts p {
+  margin-bottom: 0.7em;
 }
