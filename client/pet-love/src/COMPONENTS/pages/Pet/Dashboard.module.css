@@ -97,6 +97,7 @@
 .actions .conclude_btn:hover {
   color: #fff;
   border-color: var(--secundary-color);
+  background-color: var(--secundary-color);
 }
 
 .contacts p {
