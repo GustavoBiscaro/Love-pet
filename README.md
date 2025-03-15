@@ -17,8 +17,6 @@
 <h2>BACKEND - SERVER SIDE</h2>
 <h3>NodeJs</h3>
 <h3>MongoDB</h3>
-<div>
-<div>
 <h3>JavaScript</h3>
 
 # Bibliotecas Utilizadas
@@ -45,6 +43,12 @@
 <p>Utilizamos o Postman para testar todas as rotas e funções do projeto via servidor, foi necessário para validar rotas de UPDATE, DELETE, GET, POST e CATCH do projeto de modo a garantir que não daria conflito para o início do Frontend.</p>
 </div>
 
+<h2>FRONTEND - CLIENT SIDE</h2>
+<h3>ReactJs</h3>
+<h3>ViteJs</h3>
+<h3>Axios</h3>
+
+
 # ESTRUTURA MVC
 ### Todo projeto foi feito utilizando como inspiração, a estrutura MVC (Model-View-Controller) com o objetivo de facilitar a manutenção do código.
 
@@ -53,6 +57,7 @@
 <br>
 <p><strong>Lado servidor:</strong> npm run start</p>
 <p><strong>Lado cliente:</strong> npm run dev</p>
+
 
 # SCREENSHOTS DO SISTEMA
 ## Tela de Cadastro
